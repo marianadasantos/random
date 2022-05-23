@@ -1,0 +1,54 @@
+<!--titulo, autor, disponibilidade: prop livro-->
+<!--incluir, excluir, consultar-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <title>Biblioteca</title>
+    <script defer src="jas.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="form" action="/" method="GET">
+        <div class="header">
+            <h2>Registo de Livros</h2>
+        </div>
+        <div class="inp">
+            <label for="titulo">Título</label>
+            <input type="text" name="titulo" id="titulo">
+            <small id="01">Erro! Adicione um título</small>
+        </div>
+        <div class="inp">
+            <label for="autor">Autor</label>
+            <input type="text" name="autor" id="autor">
+            <small id="02">Erro! Adicione um autor</small>
+        </div>
+        <div class="inp">
+            <label for="editora">Editora</label>
+            <input type="text" name="editora" id="editora">
+            <small id="03">Erro! Adicione uma editora</small>
+        </div>
+        <!--<div class="inp">
+            <label for="codigo">Editora</label>
+            <input type="number" name="codigo" id="codigo">
+        </div>-->
+        <div class="inp">
+            <button type="submit" id="btn">Enviar</button>
+        </div>
+    </form>
+    </div>
+    <!--<div class="register">
+        <button type="submit" id="register">Registrar Livro</button>
+    </div>-->
+    <div class="avail">
+        <button type="submit" id="avail">Disponibilidade</button>
+    </div>
+    <div class="del">
+        <button type="submit" id="del">Deletar Registro</button>
+    </div>
+</body>
+</html>

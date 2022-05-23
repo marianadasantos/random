@@ -1,0 +1,22 @@
+{
+  "name": "app1",
+  "version": "1.0.0",
+  "description": "aplicativo node",
+  "main": "app2.js",
+  "scripts": {
+    "test": "nodemon app2.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marianadasantos/teste-node.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "mariana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marianadasantos/teste-node/issues"
+  },
+  "homepage": "https://github.com/marianadasantos/teste-node#readme"
+}

@@ -1,0 +1,75 @@
+/*MODAL*/
+.modal-container {
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    left:0px;
+    z-index:2000;
+    display: flex;
+    justify-content: center; /*alinhamento vertical*/
+    align-items: center; /*alinhamento horizontal*/
+}
+
+.modal {
+    background-color: #fff;
+    width: 60%;
+    min-width: 300px;
+    padding: 40px;
+    border: 10px solid rgb(164, 143, 164);
+    box-shadow: 0 0 0 10px white; /*BORDA EM CIMA DE BORDA SEM CRIAR MAIS DIVS*/
+    position: relative;
+}
+
+@keyframes modal{
+    from{
+        opacity:0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar .modal {
+    animation: modal .3s;
+}
+
+
+
+.fechar {
+    font-size: 1.5em;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 30%;
+    border: 2px solid white;
+    background: rgb(164, 143, 164);
+    color: white;
+    font-family: '';
+    cursor: pointer;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.3);
+    
+}
+
+.fechar:hover {
+    border: 4px solid white;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.3);
+}
+
+.fechar:active {
+    border: 2px solid white;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.3);
+}
+
+.modal-container.mostrar {
+    display: flex;
+}
+/*FIM MODAL*/
+

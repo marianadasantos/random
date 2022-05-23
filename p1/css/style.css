@@ -1,0 +1,149 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lato',sans-serif;
+}
+
+.center {
+    display: flex;
+    /* flex box sempre vai tentar deixar td numa linha só (nowrap), 
+    com o wrap vc consegue modificar as dimensões, se não tiver espaço cai pra outra linha*/
+    flex-wrap: wrap;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 2%; 
+}
+
+html, body {
+    height: 100%;
+    /*não vai existir scrollbar*/
+    overflow-y:hidden;
+    overflow-x: hidden;
+    
+}
+
+header {
+    height: 200px;
+    padding: 20px 0; 
+}
+
+.logo {
+    width: 50%;
+}
+
+.logos {
+    top: -20px;
+    left: 0;
+    position: absolute;
+}
+
+.menu {
+    width: 50%;
+    text-align: right;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    font-weight:bold;
+    margin-right: 15px;
+    padding: 30px;
+    
+}
+
+section.about {
+    height: calc(100% - 200px);
+    position: relative;
+}
+
+.extras {
+    position: absolute;
+    bottom:0;
+    right: 0;
+    width: 500px;
+    height:500px;
+    background-color: rgb(0 112 66);
+    border-top-left-radius: 500px 500px;
+}
+
+.img1 {
+    max-width: 350px;
+    max-height: 470px;
+
+}
+
+.social-media {
+    position: absolute;
+    right: 20px;
+    top: 150px;
+}
+
+.social-media img {
+    max-width: 30px;
+    max-height: auto;
+    display:block;
+    margin: 20px 0px;
+}
+
+span {
+    color: rgb(0 112 66);
+}
+
+.txt-about h1 {
+    font-size: 400%;
+}
+
+.txt-about {
+    margin-left: 50px;
+    margin-top: -40px;
+}
+
+.txt-about p {
+    font-size: 110%;
+    text-align: justify;
+    margin-right: 600px;
+    margin-top: 20px;
+    margin-bottom:20px;
+    color: black;
+    font-weight: bold;
+}
+
+.txt-about button {
+    border: 0;
+    font-size: 14px;
+    background-color: rgb(0 112 66);
+    color: white;
+    border-radius: 30px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    word-spacing: 0.2em;
+
+}
+
+.txt-about button:hover {
+    border: 1px solid #ffffff;
+}
+
+.txt-about button:active {
+    background-color:rgb(60 184 118);
+}
+
+.milkinho {
+    position: absolute;
+    right: 0;
+    top: 270px;
+    margin-right: 550px;
+    
+}
+
+.milkinho img {
+    max-width: 90px;
+    max-height: auto;
+    display: inline;
+    transform: rotate(2eg);
+    
+}
